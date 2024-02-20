@@ -1,0 +1,34 @@
+.section-banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../../assets/images/Banner/bannerSky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .logoBanner {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+
+  .bannerDivisor {
+    position: absolute;
+    bottom: 0;
+    background-image: url("../../../../assets/images/Banner/bannerDivisor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 28rem;
+    
+
+    h1 {
+      color: #fff;
+    }
+  }
+}
+

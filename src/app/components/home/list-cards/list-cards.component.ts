@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-list-cards',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   templateUrl: './list-cards.component.html',
   styleUrl: './list-cards.component.scss'
 })
-export class ListCardsComponent {
-
+export class ListCardsComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init()
+  }
 }

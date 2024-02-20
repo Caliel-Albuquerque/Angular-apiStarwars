@@ -1,0 +1,56 @@
+.section-listCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13rem;
+
+  .filmsTitle {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+  }
+
+  .cardslist {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+
+    .cardInformation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 15rem;
+
+      .card {
+        height: 37.5rem;
+        width: 25rem;
+        background-image: url('../../../../assets/images/cardList/capa01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .noCard {
+        height: 37.5rem;
+        width: 25rem;   
+      }
+    }
+
+    .divider {
+      position: absolute;
+      height: 100%;
+      background-color: #fff;
+      width: 0.2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+}

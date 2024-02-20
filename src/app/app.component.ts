@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/general/header/header.component';
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,9 @@ import { HeaderComponent } from './components/general/header/header.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init()
+  }
   title = 'apiStarwars';
 }
